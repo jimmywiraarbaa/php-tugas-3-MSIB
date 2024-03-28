@@ -42,7 +42,7 @@ function tentukanGrade($nilai)
 
 <body>
     <h3 align="center">Data Nilai Mahasiswa</h3>
-    <table border="1" cellpadding="10" cellspacing="2" width="100%" style="text-align: center;">
+    <table border="1" cellpadding="10" cellspacing="2" width="100%">
         <thead>
             <tr>
                 <?php foreach ($ar_judul as $judul) { ?>
@@ -100,18 +100,26 @@ function tentukanGrade($nilai)
                 </tr>
             <?php } ?>
         </tbody>
-        <tfoot style="background-color: yellowgreen; font-weight: bold;">
+        <tfoot style="background-color: yellowgreen;">
             <tr>
-                <td colspan="3">Nilai Tertinggi</td>
-                <td colspan="4"><?= $nilai_tertinggi ?></td>
+                <td colspan="3" style="text-align: center;">Nilai Tertinggi</td>
+                <td colspan="4" style="text-align: center;"><?= $nilai_tertinggi ?></td>
             </tr>
             <tr>
-                <td colspan="3">Nilai Terendah</td>
-                <td colspan="4"><?= $nilai_terendah ?></td>
+                <td colspan="3" style="text-align: center;">Nilai Terendah</td>
+                <td colspan="4" style="text-align: center;"><?= $nilai_terendah ?></td>
             </tr>
             <tr>
-                <td colspan="3">Nilai Rata-rata</td>
-                <td colspan="4"><?= round($total_nilai / $jumlah_mahasiswa, 2) ?></td>
+                <td colspan="3" style="text-align: center;">Nilai Rata-rata</td>
+                <td colspan="4" style="text-align: center;"><?= round($total_nilai / $jumlah_mahasiswa, 2) ?></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">Jumlah Mahasiswa</td>
+                <td colspan="4" style="text-align: center;"><?= $jumlah_mahasiswa ?></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">Jumlah Keseluruhan Nilai</td>
+                <td colspan="4" style="text-align: center;"><?= $total_nilai ?></td>
             </tr>
         </tfoot>
     </table>
