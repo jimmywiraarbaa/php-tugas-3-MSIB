@@ -39,6 +39,10 @@ function tentukanGrade($nilai)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Nilai Mahasiswa</title>
     <style>
+        thead {
+            background-color: yellowgreen;
+        }
+
         footer {
             padding: 20px;
             text-align: center;
